@@ -2,6 +2,7 @@ function swap(items, leftIndex, rightIndex) {
   [items[leftIndex], items[rightIndex]] = [items[rightIndex], items[leftIndex]];
 }
 
+//Big 0 = O(log n) logaritmic
 function binarySearch(orderArray: number[], needle: number): number {
   // remember this is an ordered array of numbers
   let left = 0; // start index of the array
@@ -19,6 +20,7 @@ function binarySearch(orderArray: number[], needle: number): number {
   return -1;
 }
 
+//Big 0 = O(n^2) polynormial
 function bubbleSort(unorderArray: number[]): number[] {
   // Shallow copy makes it pure:
   const arr = unorderArray.slice();
@@ -34,6 +36,7 @@ function bubbleSort(unorderArray: number[]): number[] {
   }
   return arr;
 }
+//Big 0 = O(n^2) polynormial
 function selectionSort(unorderArray: number[]): number[] {
   // Shallow copy to make the function pure:
   const arr = unorderArray.slice();
@@ -53,11 +56,13 @@ function selectionSort(unorderArray: number[]): number[] {
   }
   return arr;
 }
+// Big O = O(n log (n))
+// Recursive, divide and conquer.
 function quickSort(unorderArray: number[]): number[] {
   if (unorderArray.length <= 1) {
     return unorderArray;
   }
-  const pivot = unorderArray[0]; //
+  const pivot = unorderArray[0];
   const leftArr = [];
   const rightArr = [];
   // array starts from position 1 as the one i'm using as a pivot is the 0
