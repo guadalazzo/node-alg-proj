@@ -104,3 +104,17 @@ Use appropriate response headers. To prevent XSS in HTTP responses that aren't i
 - **Performance** (Indirect): While not a direct effect, noopener can lead to minor performance improvements. Without that connection to the original page, the new tab may load marginally faster.
 
 ## What are the best practices in developer experience?
+
+Using visual studio with extensions that alert live
+
+Having an application that hot reloads
+
+Having a tool that run tests, and eslint before pushing, like husky.
+
+Having an unify linting and formatting tool. (eslint, prettier)
+
+A good Onboarding experience, a well documented code, guides to start the project and what does the project do.
+
+A CodeStyle guide to understand how the team is writting code, some component samples.
+
+A place to ask questions , group in slack, mattermost or teams. Or a dev meeting.
