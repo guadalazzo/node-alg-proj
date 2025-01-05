@@ -97,7 +97,7 @@ Filter input on arrival. At the point where user input is received, filter as st
 
 Use appropriate response headers. To prevent XSS in HTTP responses that aren't intended to contain any HTML or JavaScript, you can use the Content-Type and X-Content-Type-Options headers to ensure that browsers interpret the responses in the way you intend.
 
-## Why Use “noopener noreferrer”?
+## Why Use “noopener noreferrer”? rel attribute in anchor <a /> tag
 
 - **Security**: This tag is primarily used to enhance security. By preventing newly opened tabs or windows from controlling the original page, you safeguard your users from potential exploits.
 - **Privacy**: If you don’t want to pass on referrer information to external websites, the noreferrer attribute ensures your visitors’ browsing history remains a little more private.
